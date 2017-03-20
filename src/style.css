@@ -1,0 +1,15 @@
+.h1{
+   background: chartreuse;
+}
+.td1 :hover{
+   background: red;
+}
+.td2{
+    background: blue;
+}
+.td3{
+    background: green;
+}
+td {
+    border: 20px;
+}

@@ -2,19 +2,21 @@
 <html lang="by">
 <head>
     <meta charset="UTF-8" name="анкета какая-то" content="домашка ко второму заданию">
+    <link href="style.css">
+    <script src="script.js"></script>
     <title>Анкета</title>
 </head>
 <body>
-<h1>АНКЕТА</h1>
+<h1 class="h1">АНКЕТА</h1>
 <form action="blabla.by">
     <table cellspacing="13">
         <tr valign="top">
-            <td>
+            <td class="td1">
                 <p><label for="N"><strong>Імя:</strong></label><br><input id="N" name="Name" placeholder=" увядзіце імя" pattern="[A-Za-zА-Яа-яЁё]{,30}" required></p>
                 <p><label for="P"><strong>Імя па бацьку:</strong></label><br><input id="P" name="Patronymic" placeholder=" увядзіце імя па бацьку" pattern="[A-Za-zА-Яа-яЁё]{,30}" required></p></p>
                 <p><label for="L"><strong>Прозвішча:</strong></label><br><input id="L" name="Last name" placeholder=" увядзіце прозвішча" pattern="[A-Za-zА-Яа-яЁё]{,30}" required></p></p>
             </td>
-            <td>
+            <td class="td2">
                 <p><label for="Age"><strong>Ўзрост:</strong></label><br>
                 <input id="Age" type="number" name="Age" pattern="[0-9]{,2}" required></p>
                 <div id="G">
@@ -24,7 +26,7 @@
                 <p><input type="radio" id="g3" name="Gender" value="Other" required><label for="g3">Іньшы</label></p>
                 </div>
             </td>
-            <td>
+            <td class="td1">
                 <p><label for="kurs"><strong>Курс навучання:</strong></label><br>
                 <select id="kurs" name="Kurs" size="1" required>
                     <option value="k1">1 курс</option>
@@ -50,19 +52,19 @@
             </td>
         </tr>
         <tr valign="top">
-            <td>
+            <td class="td3">
                 <p><label for="Q"><strong>Як Вы пра нас даведаліся?</strong></label><br>
                 <textarea id="Q" required spellcheck="true">
 </textarea></p>
             </td>
-            <td>
-                <p><label for="QQ">Заўвагі і пажаданні:<span style="color: red"><tt><br> *неабавязковае поле</tt></span></label><br>
-                <textarea id="QQ" spellcheck="true">
-</textarea></p>
+            <td class="td2">
+                <p><label for="QQ">Заўвагі і пажаданні:</label><br>
+                <textarea id="QQ" spellcheck="true"></textarea><br><span style="color: red"><tt><br> *неабавязковае поле</tt></span>
+                </p>
             </td>
         </tr>
     </table>
-    <input type="submit">
+    <input  type="submit">
     <input type="reset">
 </form>
 </body>
